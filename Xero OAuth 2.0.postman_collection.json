@@ -73,7 +73,7 @@
 						"id": "6c8ecf27-a232-4b87-931d-8cced27b1fbc",
 						"exec": [
 							"var data = JSON.parse(responseBody);",
-							"postman.setEnvironmentVariable(\"xero-tenant-id\", data[0].TenantId);",
+							"postman.setEnvironmentVariable(\"xero-tenant-id\", data[0].tenantId);",
 							"",
 							"tests[\"xero-tenant-id: \" + pm.environment.get(\"xero-tenant-id\")] = true;"
 						],
@@ -113,7 +113,7 @@
 			"response": []
 		},
 		{
-			"name": "Invoices",
+			"name": "Client List",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -195,12 +195,8 @@
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
-					"raw": "https://api.xero.com/api.xro/2.0/Invoices",
+					"raw": "https://api.xero.com/workflowmax/3.0/client.api/list",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -208,15 +204,15 @@
 						"com"
 					],
 					"path": [
-						"api.xro",
-						"2.0",
-						"Invoices"
+						"workflowmax",
+						"3.0",
+						"client.api",
+						"list"
 					]
-				},
-				"description": "\t"
+				}
 			},
 			"response": []
-		},
+		},		
 		{
 			"name": "Refresh token",
 			"event": [
