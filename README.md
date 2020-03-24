@@ -70,7 +70,7 @@ You'll be taken through to the account Select window. Select the account you wan
 
 If you've included the `openid profile email` scopes, you'll also be asked to access your basic profile information.
 
-![Allow access](images/5_4_userConsent.PNG)
+![Allow access](images/5_4_userConsent.png)
 
 Once complete you'll be passed back to Postman.
 
