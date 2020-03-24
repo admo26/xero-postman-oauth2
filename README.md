@@ -1,8 +1,8 @@
-# Xero-Postman OAuth 2.0
-A Postman collection for authenticating to the Xero API. 
+# Xero-Postman WorkflowMax OAuth 2.0
+A Postman collection for authenticating to the WorkflowMax API using OAuth 2.0. 
 
 ## Steps to get up and running
-Follow these steps to quickly get up and running with the Xero API and Postman:
+Follow these steps to quickly get up and running with the WorkflowMax API and Postman:
 
 ### 1. Import the Xero OAuth 2.0 collection and Xero environment into Postman
 Click the button below and select the Desktop version of Postman (Chrome extension doesn't support environment variables). This will also install the Collection and Environment we'll be using.
@@ -66,13 +66,11 @@ At this stage you will be prompted to log in to Xero.
 
 ![Login to Xero](images/5_3_askedToLogin.PNG)
 
-If you've included the `openid profile email` scopes, you'll be asked to access your basic profile information.
+You'll be taken through to the account Select window. Select the account you want to connect to. If you want to connect to more than one account, you can repeat the steps above and select another account.
 
-![Allow Basic Profile Information](images/5_4_basicProfile.PNG)
+If you've included the `openid profile email` scopes, you'll also be asked to access your basic profile information.
 
-You'll then be taken through to the Organisation Select window. Select the Organisation you want to connect to. If you want to connect to more than one Organisation, you can repeat the steps above and select another Organisation. 
-
-![Select your Organisation](images/5_5_selectOrganisation.PNG)
+![Allow access](images/5_4_userConsent.PNG)
 
 Once complete you'll be passed back to Postman.
 
@@ -86,7 +84,7 @@ Follow the same process for the Refresh Token.
 
 ![Set your Access and Refresh Tokens](images/6_1_setTheAccessAndRefreshTokens.png)
 
-### 7. Find out which tenants (organisations) we are connected to
+### 7. Find out which tenants (accounts) we are connected to
 
 1. Double-click on the GET Connections request
 1. Click Send
